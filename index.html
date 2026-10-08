@@ -3,50 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simulador de Interface - Laboratório Acadêmico</title>
+    <title>CPF123 | Simulador Premium</title>
     <meta
       name="description"
-      content="Interface simulada de plataforma de jogos com foco em educação e prevenção."
+      content="Simulador premium de interface de plataforma digital com foco em educação e prevenção."
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            boxShadow: {
-              glow: '0 10px 30px rgba(255, 186, 83, 0.28)',
-            },
-          },
-        },
-      };
-    </script>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="font-sans antialiased bg-slate-950 text-white min-h-screen flex flex-col justify-between max-w-md mx-auto shadow-2xl relative">
+  <body>
     <div class="app-shell">
       <div class="top-banner">
         <div class="top-banner__left">
           <button class="close-btn" aria-label="Fechar">✕</button>
           <div class="app-mark">CPF</div>
-          <div class="top-banner__text">
-            <p class="title">Baixe Nosso APP,</p>
-            <p class="subtitle">Ganhe Super Prêmios!</p>
+          <div class="banner-copy">
+            <p>Baixe Nosso APP,</p>
+            <span>Ganhe Super Prêmios!</span>
           </div>
         </div>
-
         <button class="install-btn">Instalar</button>
       </div>
 
-      <header class="site-header">
-        <div class="header-brand">
-          <span class="hamburger" aria-label="Menu">☰</span>
+      <header class="main-header">
+        <div class="main-header__left">
+          <button class="menu-btn" aria-label="Menu">☰</button>
           <div class="brand-logo" aria-label="Logo CPF123">
-            <span class="brand-cpf">CPF</span><span class="brand-number">123</span><span class="brand-domain">.com</span>
+            <span class="brand-cpf">CPF</span>
+            <span class="brand-number">123</span>
+            <span class="brand-dot">.com</span>
           </div>
         </div>
 
         <div class="header-actions">
-          <button class="btn btn-secondary">Entrar</button>
+          <button class="btn btn-ghost">Entrar</button>
           <button class="btn btn-primary">Registro</button>
         </div>
       </header>
@@ -54,108 +44,108 @@
       <main class="main-content">
         <section class="hero-banner">
           <div class="hero-copy">
-            <span class="promo-tag">HOT EVENTS</span>
-            <h2>30% DIÁRIO</h2>
+            <span class="hero-badge">HOT EVENTS</span>
+            <h1>30% DIÁRIO</h1>
             <p>CASHBACK EM PERDAS EM APOSTAS</p>
-            <div class="hero-cta-wrap">
-              <button class="hero-btn">Aposte Agora!</button>
-            </div>
+            <button class="hero-cta">Aposte Agora!</button>
           </div>
-          <div class="hero-illustration" aria-hidden="true">
-            <div class="mascot">🐴</div>
-            <div class="coin">🪙</div>
+          <div class="hero-visual" aria-hidden="true">
+            <span class="mascot">🐴</span>
+            <span class="coin">🪙</span>
           </div>
         </section>
 
-        <section class="campaign-grid">
-          <div class="campaign-card invite-card">
-            <div>
+        <section class="campaigns-grid">
+          <article class="campaign-card invite-card">
+            <div class="invite-content">
               <h3>CONVIDE</h3>
               <p><span>1</span> PESSOA</p>
               <p>E GANHE</p>
             </div>
             <div class="invite-value">R$80</div>
-            <div class="gift-emoji">🎁</div>
-          </div>
+            <div class="gift-icon">🎁</div>
+          </article>
 
-          <div class="right-stack">
-            <div class="mini-card promo-card">
+          <div class="campaign-side">
+            <div class="mini-card share-card">
               <p>Com Amigos Compartilhe</p>
-              <div>
-                <span class="pill">PIX SAQUE RÁPIDO</span>
-                <span class="amount">R$100</span>
+              <div class="mini-row">
+                <span class="chip">PIX SAQUE RÁPIDO</span>
+                <span class="price">R$100</span>
               </div>
             </div>
 
-            <div class="mini-card rio-card">
+            <div class="mini-card group-card">
               <div>
                 <p>RIO GRUPO</p>
                 <span>Acesse o canal</span>
               </div>
-              <div class="icon-box">💬</div>
+              <div class="group-icon">💬</div>
             </div>
           </div>
         </section>
 
         <div class="notice-bar">
-          <div class="notice-track-wrap">
+          <div class="notice-inner">
             <span class="notice-icon">📢</span>
             <div class="notice-track">
-              <div class="notice-text">
+              <span class="notice-text">
                 Grupo RIO apresenta sua marca oficial... Jogue com responsabilidade. Simulador voltado para estudos de prevenção e análise comportamental.
-              </div>
+              </span>
             </div>
           </div>
           <span class="search-icon" aria-label="Buscar">🔍</span>
         </div>
 
-        <section class="popular-section">
-          <div class="section-header">
-            <div class="section-title-wrap">
-              <span class="title-icon">🔥</span>
+        <section class="category-block">
+          <div class="section-label">
+            <div class="label-title">
+              <span>🔥</span>
               <h3>Popular</h3>
             </div>
-            <div class="results-pill">
-              Todos <span>100</span>
-            </div>
+            <div class="label-meta">Todos <strong>100</strong></div>
           </div>
 
-          <div class="pill-row">
+          <div class="category-row">
             <button class="filter-pill active">
-              <div class="filter-name">Popular</div>
-              <div class="filter-meta">100 games</div>
+              <span>Popular</span>
+              <small>100 games</small>
             </button>
             <button class="filter-pill">
-              <div class="filter-name">PG</div>
-              <div class="filter-meta">157 games</div>
+              <span>PG</span>
+              <small>157 games</small>
             </button>
             <button class="filter-pill">
-              <div class="filter-name">PP</div>
-              <div class="filter-meta">489 games</div>
+              <span>PP</span>
+              <small>489 games</small>
             </button>
             <button class="filter-pill">
-              <div class="filter-name">POPOK</div>
-              <div class="filter-meta">58 games</div>
+              <span>POPOK</span>
+              <small>58 games</small>
             </button>
             <button class="filter-pill">
-              <div class="filter-name">G759</div>
-              <div class="filter-meta">63 games</div>
+              <span>G759</span>
+              <small>63 games</small>
+            </button>
+            <button class="filter-pill">
+              <span>LIVE</span>
+              <small>42 games</small>
             </button>
           </div>
         </section>
 
-        <section class="games-section">
-          <div class="section-header compact">
-            <div class="section-title-wrap">
-              <span class="title-icon">🎯</span>
-              <h3>Jogos em Destaque</h3>
+        <section class="games-block">
+          <div class="section-label section-label--compact">
+            <div class="label-title">
+              <span>🎮</span>
+              <h3>Em Destaque</h3>
             </div>
-            <button class="link-btn">Ver todos</button>
+            <button class="view-all">Ver todos</button>
           </div>
 
-          <div class="game-grid">
+          <div class="games-grid">
             <article class="game-card featured">
-              <div class="game-badge hot">HOT</div>
+              <span class="game-badge hot">HOT</span>
               <div class="game-art art-1"></div>
               <div class="game-info">
                 <div>
@@ -167,7 +157,7 @@
             </article>
 
             <article class="game-card">
-              <div class="game-badge new">NEW</div>
+              <span class="game-badge new">NEW</span>
               <div class="game-art art-2"></div>
               <div class="game-info">
                 <div>
@@ -179,7 +169,7 @@
             </article>
 
             <article class="game-card">
-              <div class="game-badge vip">VIP</div>
+              <span class="game-badge vip">VIP</span>
               <div class="game-art art-3"></div>
               <div class="game-info">
                 <div>
@@ -191,7 +181,7 @@
             </article>
 
             <article class="game-card">
-              <div class="game-badge bonus">BONUS</div>
+              <span class="game-badge bonus">BONUS</span>
               <div class="game-art art-4"></div>
               <div class="game-info">
                 <div>
@@ -201,22 +191,64 @@
                 <button class="play-btn">Jogar</button>
               </div>
             </article>
+
+            <article class="game-card">
+              <span class="game-badge plus">+</span>
+              <div class="game-art art-5"></div>
+              <div class="game-info">
+                <div>
+                  <h4>Mystical Moon</h4>
+                  <p>RTP 96.5%</p>
+                </div>
+                <button class="play-btn">Jogar</button>
+              </div>
+            </article>
+
+            <article class="game-card">
+              <span class="game-badge plus">+</span>
+              <div class="game-art art-6"></div>
+              <div class="game-info">
+                <div>
+                  <h4>Thunder King</h4>
+                  <p>RTP 97.1%</p>
+                </div>
+                <button class="play-btn">Jogar</button>
+              </div>
+            </article>
           </div>
         </section>
 
         <section class="stats-panel">
           <div class="stat-box">
-            <span class="stat-label">Vitorias</span>
+            <span>Vitórias</span>
             <strong>2.4k</strong>
           </div>
           <div class="stat-box">
-            <span class="stat-label">Premios</span>
+            <span>Prêmios</span>
             <strong>R$89k</strong>
           </div>
-          <div class="stat-box accent">
-            <span class="stat-label">Hoje</span>
+          <div class="stat-box stat-box--accent">
+            <span>Hoje</span>
             <strong>+18%</strong>
           </div>
+        </section>
+
+        <section class="promo-stack">
+          <article class="promo-box">
+            <div class="promo-icon">💰</div>
+            <div>
+              <h4>Bônus Diário</h4>
+              <p>Faça login todos os dias e ganhe recompensas extras.</p>
+            </div>
+          </article>
+
+          <article class="promo-box">
+            <div class="promo-icon">🎯</div>
+            <div>
+              <h4>Programa VIP</h4>
+              <p>Desbloqueie benefícios exclusivos e prioridade.</p>
+            </div>
+          </article>
         </section>
       </main>
 
